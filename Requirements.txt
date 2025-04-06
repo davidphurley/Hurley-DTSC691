@@ -5,3 +5,4 @@ matplotlib
 requests
 datetime
 bs4
+fredapi
