@@ -10,3 +10,4 @@ datetime
 bs4
 fredapi
 tensorflow==2.13.0
+pandas-ta
