@@ -11,3 +11,8 @@ bs4
 fredapi
 tensorflow==2.13.0
 pandas-ta
+matplotlib
+seaborn
+xgboost
+statsmodels.tsa.stattools
+sklearn
