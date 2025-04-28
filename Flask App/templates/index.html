@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurley 691 Flask App</title>
+</head>
+<body>
+    <h1>Hurley 691 Flask App</h1>
+    <form id="predict-form">
+        <label for="dates">Enter date:</label><br>
+        <input type="text" id="date" name="date" placeholder="YYYY-MM-DD"><br><br>
+        <button type="button" onclick="makePrediction()">Predict</button>
+    </form>
+    <div id="result"></div>
+
+    <h2>Generated Chart</h2>
+    <button type="button" onclick="fetchPlot()">Generate Chart</button>
+    <div id="chart">
+        <img id="plot-image" src="" alt="Chart will appear here">
+    </div>
+
+    
+</body>
+</html>

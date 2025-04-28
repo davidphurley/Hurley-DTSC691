@@ -14,5 +14,7 @@ pandas-ta
 matplotlib
 seaborn
 xgboost
-optuna
 statsmodels.tsa.stattools
+scipy
+flask
+pickle
