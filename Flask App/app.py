@@ -7,6 +7,7 @@ import base64
 import matplotlib
 matplotlib.use('Agg') 
 import matplotlib.pyplot as plt
+import awsgi
 
 
 app = Flask(__name__)
@@ -216,6 +217,13 @@ def macro_input_form():
         'buy_probability': round(buy_proba, 4),
         'sell_probability': round(sell_proba, 4)
     })
+
+def lambda_handler(event, context):
+    """
+    AWS Lambda function handler.
+    """
+    with app.app_context():
+        return awsgi.response(app, event, context)
 
 if __name__ == '__main__':
     app.run(debug=True)
